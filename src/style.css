@@ -591,6 +591,9 @@ button:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 @media (max-width: 767px) {

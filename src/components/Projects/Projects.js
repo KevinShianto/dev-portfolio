@@ -2,12 +2,15 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import LetterTyping from "../../Assets/Projects/letter-typing.png";
+import MathQuiz from "../../Assets/Projects/math-quiz.png";
+import PokeGuess from "../../Assets/Projects/poke-guess.png";
+import TitanWeb from "../../Assets/Projects/titan-web.png";
+import Roxy from "../../Assets/Projects/roxy.png";
+import CiputraApps from "../../Assets/Projects/ciputra-apps.png";
+import WSS from "../../Assets/Projects/wss.png";
+import Kemanayo from "../../Assets/Projects/kemanayo.png";
+import Geniebook from "../../Assets/Projects/geniebook.png";
 
 function Projects() {
   return (
@@ -20,71 +23,121 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+        <h1 className="text-white font-medium mt-5">Web</h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={Geniebook}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Geniebook Web"
+              description="Main website for student to do learning from Geniebook. From creating and do worksheets, watch online lessons, and even chatting with professional teachers"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={LetterTyping}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Letter Typing Quiz"
+              description="Letter typing quiz game with stopwatch to count how fast the player can type the scrambled and random letters."
+              ghLink="https://github.com/KevinShianto/react-typing-quiz"
+              demoLink="https://kevinshianto.github.io/react-typing-quiz/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={MathQuiz}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Math Quiz Game"
+              description="A simple math quiz game to count the sum or difference between two randomised numbers."
+              ghLink="https://github.com/KevinShianto/react-math-quiz"
+              demoLink="https://kevinshianto.github.io/react-math-quiz/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={PokeGuess}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Pokemon Guess Game"
+              description="Player will be given 60 seconds to guess the randomised pokemon. Every 12 seconds, a new hint will be revealed to player to help them identify the pokemon."
+              ghLink="https://github.com/KevinShianto/pokemon-guess-games"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={TitanWeb}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Titan Web"
+              description="The Titan E-Commerce website 
+                is a website that sells 
+                motorcycle parts. Like any 
+                regular e-commerce website, 
+                customers can buy goods from 
+                the Titan Store, add items to 
+                wishlists, review products, and 
+                also track orders."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={Roxy}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Roxy Apothecary"
+              description="Develop a Point of Sale web 
+              for Roxy Pharmacy based on 
+              Frappe Framework. The POS 
+              also had some custom made 
+              tools to help cashiers input 
+              doctor’s prescriptions more 
+              easily."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={WSS}
+              isBlog={false}
+              title="WSS Website"
+              description="WSS or Wijaya Super Store is an E-Commerce website specially designed 
+              for Sellers. WSS helps clients to expand 
+              their sales nationwide."
+            />
+          </Col>
+        </Row>
+
+        {/* Mobile Apps */}
+        <h1 className="text-white font-medium mt-5">Mobile Apps</h1>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={{ span: 4 }} className="project-card">
+            <ProjectCard
+              imgPath={CiputraApps}
+              isBlog={false}
+              title="Ciputra Apps"
+              description="The Ciputra Mall application is an 
+              application for customers at Ciputra
+              Mall Jakarta. The app will save 
+              customer points after they shop and can 
+              be used to buy promo coupons. The 
+              application also provides information 
+              such as current or upcoming events, 
+              tenant locations, and promotions"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Kemanayo}
+              isBlog={false}
+              title="Kemanayo"
+              description="Kemanayo apps is an application for 
+              tourist or domestic adventurer looking 
+              for a brand new memorable adventure. 
+              Not only buying a trip, but customer can 
+              also make a trip and earn money"
             />
           </Col>
         </Row>
